@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global variable</title>
+    <style>
+         :root{
+            --color:rgb(45, 34, 197);
+            --seccolor:rgb(222, 231, 119);
+            
+        }
+    nav{
+         background-color: var(--color);
+            color:wheat;
+            font-size:43px;
+            margin: 4px;
+            padding: 3px;
+    
+        }
+        .container{
+        background-color: var(--seccolor);
+        }
+       
+        ul{
+            display: flex; 
+        }
+
+    ul li{
+        list-style: none;
+        padding: 34px;
+        font-size: 19px;
+        border: 1px solid gray;
+    }
+
+        footer{
+        background-color: var(--seccolor,red);
+        }
+
+    </style>
+</head>
+<body>
+
+        <nav>
+            Welcome to Input
+        </nav>
+        <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eum laboriosam labore animi sed maxime asperiores. Sint quam atque numquam temporibus. In nihil deleniti provident expedita culpa enim qui temporibus.</div>
+    <footer>
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Share</li>
+        </ul>
+    </footer>
+</body>
+</html>
